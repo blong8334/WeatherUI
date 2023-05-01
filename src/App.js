@@ -1,24 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import ScatterPlot from './ScatterPlot';
 
 function App() {
+  const data = [[0, 3],[5, 13],[10, 22],[15, 36],[20, 48],[25, 59],[30, 77],[35, 85],[40, 95],[45, 105],[50, 120],[55, 150],[60, 147],[65, 168],[70, 176],[75, 188],[80, 199],[85, 213],[90, 222],[95, 236],[100, 249]];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScatterPlot data={data}/>
   );
 }
 
